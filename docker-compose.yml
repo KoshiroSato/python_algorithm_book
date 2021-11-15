@@ -1,0 +1,10 @@
+version: '3'
+
+services: 
+  python:
+    build: 'Docker/'
+    volumes: 
+      - '.:/temp/python_algorithm_book'
+    ports:
+      - 8888:8888
+    working_dir: '/temp/python_algorithm_book/notebooks'
